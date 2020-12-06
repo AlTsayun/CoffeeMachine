@@ -12,12 +12,11 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class User implements Serializable {
+public class Ingredient implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private UUID id;
-    private String login;
-    private String email;
-    private long balance;
-    private boolean isAdmin;
+    private float storedQuantity;
+    private String name;
+
 }
