@@ -5,9 +5,6 @@ import com.tsayun.coffemachine.dao.exception.DAOException;
 
 import java.util.UUID;
 
-public interface UserDAO {
-    void add(User user) throws DAOException;
-    void remove(UUID id)throws DAOException;
-    void update(User user)throws DAOException;
-    void signIn(String login, String password) throws DAOException;
+public interface UserDAO extends GenericDAO<User, UUID> {
+    User signIn(String login, String password) throws DAOException;
 }

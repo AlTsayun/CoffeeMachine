@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.UUID;
 
 @Getter
@@ -18,6 +19,6 @@ public class User implements Serializable {
     private UUID id;
     private String login;
     private String email;
-    private long balance;
-    private boolean isAdmin;
+    private BigDecimal balance;
+    private Boolean isAdmin;
 }

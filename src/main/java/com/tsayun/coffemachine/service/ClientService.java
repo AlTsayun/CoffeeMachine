@@ -1,6 +1,5 @@
 package com.tsayun.coffemachine.service;
 
-import com.tsayun.coffemachine.bean.Drink;
 import com.tsayun.coffemachine.bean.User;
 import com.tsayun.coffemachine.service.exception.ServiceException;
 

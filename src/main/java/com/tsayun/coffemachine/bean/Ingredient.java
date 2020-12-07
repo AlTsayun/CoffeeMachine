@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.util.UUID;
 
 @Getter
@@ -16,7 +17,8 @@ public class Ingredient implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private UUID id;
-    private float storedQuantity;
+    private BigDecimal price;
+    private Float storedQuantity;
     private String name;
 
 }

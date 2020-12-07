@@ -7,7 +7,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serializable;
-import java.util.List;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.Map;
 import java.util.UUID;
 
@@ -15,11 +16,12 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Drink implements Serializable {
+public class DrinkToOrder implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private UUID id;
-    private long price;
+    private BigDecimal price;
     private String name;
+    private Long quantity;
     private Map<Ingredient, Float> ingredientToQuantity;
 }
